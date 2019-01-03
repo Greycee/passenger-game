@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html id="game">
+	<head>
+		<title>Where is your passenger?</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="game.js"></script>
+	</head>
+	<body class="game">
+		<div class="controls">
+			<div class="tries">
+				<img id= 't1' src="img/thumbs-up.png"  class="thumbs">
+				<img id= 't2'  src="img/thumbs-up.png" class="thumbs">
+				<img id= 't3'  src="img/thumbs-up.png" class="thumbs">
+			</div>
+			<div class="timer">
+				Remaining time: <span id="timer"></span>
+			</div>
+		</div>
+		<script> 
+		var generatePassenger = setInterval(function(){
+			randomPosition()
+		}, generatePassengerTime)
+		</script>
+	</body>
+</html>

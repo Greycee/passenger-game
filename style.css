@@ -1,0 +1,59 @@
+#game {
+	cursor: url('img/driver.png')20 20, auto;
+}
+
+.intro {
+	background-color: lightgrey;
+}
+
+.game {
+	background-image: url('img/street.jpg');
+}
+
+.size1 {
+	width: 50px;
+	height: 100px;
+}
+
+.size2 {
+	width: 25px;
+	height: 40px;
+}
+
+.controls {
+	position: absolute;
+	width: 190px;
+	padding: 10px;
+	bottom: 0;
+	left: 0;
+	border-top: solid 1px white;
+	background-color: white;
+}
+
+.tries {
+	float: left;
+}
+
+.time {
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.thumbs {
+	width: 50px;
+	height: 50px;
+}
+
+.gameover {
+	background-color: #BFEFFF;
+}
+
+.intro-text, .gameover-text, .winner-text  {
+	height: 500px;
+}
+
+.winner {
+	background-color: #7FFFD4;
+}
+

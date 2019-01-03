@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Where is your passenger?</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<script>
+			function startGame() {
+				var level = document.getElementById('level').value
+
+				if(level === '') {
+					return false
+				} 
+
+				window.location.href = "game.html?" + level
+			}
+		</script>
+	</head>
+	<body class="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<div class="mb-2">
+							<img src="img/intro-text.png" class="img-fluid intro-text">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<div class="mb-2">
+							<select class="form-control" id="level">
+								<option value=""> -- Select the level --</option>
+								<option value= "easy">Easy</option>
+								<option value= "hard">Hard</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center button">
+						<button type="button" class="btn btn-danger btn-lg" onclick="startGame()">
+							Play 
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
